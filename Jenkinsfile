@@ -18,17 +18,15 @@ pipeline {
         }
       }
     }
-    stage{
+    stage('To check docker version'){
       when {
-
         branch "branch1"
-
-      }
-      steps{
-      script{
-        sh 'docker --version'
-      }
-      }
-    }
-  }
-}
+        }
+        steps{
+          script{
+            sh 'docker --version'
+            }
+            }
+          }
+          }
+          }

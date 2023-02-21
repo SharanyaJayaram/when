@@ -10,15 +10,13 @@ pipeline {
 
   stages {
 
-    stage('Main file') {
+    stage('To check java version') {
 
       steps {
-
-        echo "Trying out multibranch pipeline" >> main.txt
-
+        script{
+          sh 'java --version'
+        }
       }
-
     }
-
   }
 }

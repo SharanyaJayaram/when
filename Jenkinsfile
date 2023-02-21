@@ -10,11 +10,11 @@ pipeline {
 
   stages {
 
-    stage('Add a readme file') {
+    stage('Main file') {
 
       steps {
 
-        echo "Trying out multibranch pipeline" >> README.md
+        echo "Trying out multibranch pipeline" >> main.txt
 
       }
 

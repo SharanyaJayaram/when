@@ -2,7 +2,7 @@ pipeline {
 
   agent any
    tools {
-        jdk 'jdk9'
+        maven 'apache-maven-3.0.1'
     }
 
   options {
@@ -18,7 +18,7 @@ pipeline {
 
       steps {
 
-        sh 'java --version'
+        sh 'mvn --version'
 
       }
 

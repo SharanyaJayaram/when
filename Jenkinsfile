@@ -19,6 +19,11 @@ pipeline {
       }
     }
     stage{
+      when {
+
+        branch "branch1"
+
+      }
       steps{
       script{
         sh 'docker --version'

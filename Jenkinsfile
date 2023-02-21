@@ -1,10 +1,6 @@
 pipeline {
 
   agent any
-   tools {
-        maven 'apache-maven-3.0.1'
-    }
-
   options {
 
      timestamps ()  
@@ -14,11 +10,11 @@ pipeline {
 
   stages {
 
-    stage('To check java version') {
+    stage('Add a readme file') {
 
       steps {
 
-        sh 'mvn --version'
+        echo "Trying out multibranch pipeline" >> README.md
 
       }
 

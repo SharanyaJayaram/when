@@ -2,7 +2,7 @@ pipeline {
 
   agent any
    tools {
-        jdk 'default-jdk'
+        jdk 'jdk11'
     }
 
   options {
